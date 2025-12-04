@@ -6,7 +6,6 @@ const saveShirt = (req, res, next) => {
     club: 'required|string',
     year: 'required|integer',
     model: 'required|string',
-    size: 'required|string',
     color: 'required|string',
     image: 'required|string'
   };
