@@ -203,7 +203,7 @@
     "/shirts/": {
       "get": {
         "tags": [
-          "Shirts"
+          "shirts"
         ],
         "description": "",
         "produces": [
@@ -220,7 +220,7 @@
       },
       "post": {
         "tags": [
-          "Shirts"
+          "shirts"
         ],
         "description": "",
         "parameters": [
@@ -240,9 +240,6 @@
                   "example": "any"
                 },
                 "model": {
-                  "example": "any"
-                },
-                "size": {
                   "example": "any"
                 },
                 "color": {
@@ -271,7 +268,7 @@
     "/shirts/{id}": {
       "get": {
         "tags": [
-          "Shirts"
+          "shirts"
         ],
         "description": "",
         "produces": [
@@ -302,7 +299,7 @@
       },
       "put": {
         "tags": [
-          "Shirts"
+          "shirts"
         ],
         "description": "",
         "parameters": [
@@ -330,9 +327,6 @@
                 "model": {
                   "example": "any"
                 },
-                "size": {
-                  "example": "any"
-                },
                 "color": {
                   "example": "any"
                 },
@@ -357,7 +351,7 @@
       },
       "delete": {
         "tags": [
-          "Shirts"
+          "shirts"
         ],
         "description": "",
         "parameters": [
