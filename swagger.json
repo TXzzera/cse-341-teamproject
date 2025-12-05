@@ -70,7 +70,7 @@
                 "email": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "favoriteTeam": {
                   "example": "any"
                 },
                 "birthday": {
@@ -152,7 +152,7 @@
                 "email": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "favoriteTeam": {
                   "example": "any"
                 },
                 "birthday": {
@@ -203,7 +203,7 @@
     "/shirts/": {
       "get": {
         "tags": [
-          "shirts"
+          "Shirts"
         ],
         "description": "",
         "produces": [
@@ -220,7 +220,7 @@
       },
       "post": {
         "tags": [
-          "shirts"
+          "Shirts"
         ],
         "description": "",
         "parameters": [
@@ -268,7 +268,7 @@
     "/shirts/{id}": {
       "get": {
         "tags": [
-          "shirts"
+          "Shirts"
         ],
         "description": "",
         "produces": [
@@ -299,7 +299,7 @@
       },
       "put": {
         "tags": [
-          "shirts"
+          "Shirts"
         ],
         "description": "",
         "parameters": [
@@ -351,7 +351,7 @@
       },
       "delete": {
         "tags": [
-          "shirts"
+          "Shirts"
         ],
         "description": "",
         "parameters": [
