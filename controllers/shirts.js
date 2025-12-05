@@ -2,7 +2,7 @@ const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
-  //#swagger.tags = ['shirts']
+  //#swagger.tags = ['Shirts']
   try {
     const shirts = await mongodb
       .getDatabase()
@@ -21,7 +21,7 @@ const getAll = async (req, res) => {
 
 
 const getSingle = async (req, res) => {
-  //#swagger.tags = ['shirts']
+  //#swagger.tags = ['Shirts']
   try {
     if (!ObjectId.isValid(req.params.id)) {
       return res.status(400).json({ message: 'Must use a valid shirt id to find an shirt.' });
@@ -48,7 +48,7 @@ const getSingle = async (req, res) => {
 };
 
 const shirtCreate = async (req,res) =>{
-    //#swagger.tags = ['shirts']
+    //#swagger.tags = ['Shirts']
     const newshirt = {
         brand: req.body.brand,
         club: req.body.club,
@@ -72,7 +72,7 @@ const shirtCreate = async (req,res) =>{
 }
 
 const shirtUpdate = async (req, res) => {
-    //#swagger.tags = ['shirts']
+    //#swagger.tags = ['Shirts']
     const shirtId = new ObjectId(req.params.id);
     const updatedshirt = {
         brand: req.body.brand,
@@ -100,7 +100,7 @@ const shirtUpdate = async (req, res) => {
 }};
 
 const shirtDelete = async (req, res) => {
-    //#swagger.tags = ['shirts']
+    //#swagger.tags = ['Shirts']
     const shirtId = new ObjectId(req.params.id);
 
     try {

@@ -53,7 +53,7 @@ const userCreate = async (req,res) =>{
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        favoriteColor: req.body.favoriteColor,
+        favoriteTeam: req.body.favoriteTeam,
         birthday: req.body.birthday
     };
 
@@ -77,7 +77,7 @@ const userUpdate = async (req, res) => {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        favoriteColor: req.body.favoriteColor,
+        favoriteTeam: req.body.favoriteTeam,
         birthday: req.body.birthday
     };
 
