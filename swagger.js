@@ -5,8 +5,8 @@ const doc = {
         title: 'Football Shirt Hub API',
         description: 'API for a hub of football shirts. Allows users to share opinions and information about various football shirts.',
     },
-    host: 'localhost:3000',
-    schemes: ['http'],
+    host: 'cse-341-teamproject.onrender.com',
+    schemes: ['https'],
     tags: [
     { name: 'Users', description: 'Manipulate informations of the users' },
     { name: 'Shirts', description: 'Add, Update, Delete or Request informations of the shirts' },]
