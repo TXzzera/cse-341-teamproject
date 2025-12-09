@@ -80,7 +80,9 @@ describe('Users GET endpoints', () => {
     await getSingle(req, res);
 
     expect(res.status).toHaveBeenCalledWith(400);
-    expect(res.json).toHaveBeenCalledWith({ message: 'Must use a valid user id to find an user.' });
+    expect(res.json).toHaveBeenCalledWith({
+      message: 'Must use a valid user id to find an user.'
+    });
   });
 
   it('getSingle - should return 404 if user not found', async () => {
@@ -98,6 +100,6 @@ describe('Users GET endpoints', () => {
     await getSingle(req, res);
 
     expect(res.status).toHaveBeenCalledWith(404);
-    expect(res.json).toHaveBeenCalledWith({ message: 'user not found' });
+    expect(res.json).toHaveBeenCalledWith({ message: 'User not found' });
   });
 });
