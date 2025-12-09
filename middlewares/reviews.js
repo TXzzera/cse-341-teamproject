@@ -1,12 +1,11 @@
 const validator = require('../helpers/validate');
 
-const saveStore = (req, res, next) => {
+const saveReview = (req, res, next) => {
   const validationRule = {
-    firstName: 'required|string',
-    lastName: 'required|string',
-    email: 'required|email',
-    favoriteTeam: 'required|string',
-    birthday: 'required|string'
+    username: 'required|string',
+    rating: 'required|integer',
+    price: 'required|numeric',
+    feedback: 'required|string'
   };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
@@ -22,5 +21,5 @@ const saveStore = (req, res, next) => {
 };
 
 module.exports = {
-  saveStore
+  saveReview
 };

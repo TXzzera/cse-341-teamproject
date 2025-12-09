@@ -2,11 +2,9 @@ const validator = require('../helpers/validate');
 
 const saveStore = (req, res, next) => {
   const validationRule = {
-    firstName: 'required|string',
-    lastName: 'required|string',
-    email: 'required|email',
-    favoriteTeam: 'required|string',
-    birthday: 'required|string'
+    name: 'required|string',
+    location: 'required|string',
+    URLwebsite: 'required|string'
   };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
